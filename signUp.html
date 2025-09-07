@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/mystyle.css" />
+  </head>
+
+  <body>
+    <section id="signUpForm">
+      <div class="container py-5">
+        <div class="w-75 group mx-auto p-5">
+          <h1 class="my-3">Smart Login System</h1>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="nameInputSignUp"
+              placeholder=""
+            />
+            <div class="d-none">
+              <p class="text-danger">
+                Name must start with a capital letter and be at least 4
+                characters long.
+              </p>
+            </div>
+            <label for="nameInputSignUp">Enter your name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="mailInputSignUp"
+              placeholder=""
+            />
+            <div class="d-none">
+              <p class="text-danger">Email must be a valid email format.</p>
+            </div>
+            <label for="mailInputSignUp">Enter your email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="passInputSignUp"
+              placeholder=""
+            />
+            <div class="d-none">
+              <p class="text-danger">
+                At least 8 characters long<br />
+                At least one uppercase letter<br />
+                At least one lowercase letter<br />
+                At least one special character<br />
+                At least one digit
+              </p>
+            </div>
+            <label for="passInputSignUp">Enter your password</label>
+          </div>
+          <div id="signUpResult">
+            <p class="text-danger text-center"></p>
+          </div>
+          <button
+            id="signupBtn"
+            type="button"
+            class="btn btn-outline-info w-100 mt-4"
+          >
+            Sign Up
+          </button>
+          <div class="mt-3 text-center">
+            <p class="text-white">
+              Already have an account?<br />
+              <a
+                href="./index.html"
+                class="text-white fa-beat-fade text-decoration-none"
+                >Sign In</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
